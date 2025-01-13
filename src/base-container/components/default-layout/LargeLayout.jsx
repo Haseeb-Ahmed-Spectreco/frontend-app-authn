@@ -12,7 +12,7 @@ const LargeLayout = () => {
 
   return (
     <div className="w-50 d-flex">
-      <div className="col-md-9" style={{backgroundColor: "#bc18234a"}}>
+      <div className="col-md-10" style={{backgroundColor: "#bc18234a"}}>
         <Hyperlink destination={getConfig().MARKETING_SITE_BASE_URL}>
         </Hyperlink>
         <div className="min-vh-100 d-flex align-items-center">
@@ -20,7 +20,7 @@ const LargeLayout = () => {
           <h1
             className={classNames(
               'display-2 text-white',
-              { 'ml-6': getConfig().SITE_NAME !== 'edX' },
+              { 'ml-2': getConfig().SITE_NAME !== 'edX' },
             )}
           >
             {formatMessage(messages['start.learning'])}
@@ -30,7 +30,7 @@ const LargeLayout = () => {
           </h1>
         </div>
       </div>
-      <div className="col-md-3 bg-white p-0">
+      <div className="col-md-2 bg-white p-0">
         <svg className=" w-100 h-100 "  preserveAspectRatio="xMaxYMin meet">
           <g transform="skewX(171.6)">
             <rect x="0" y="0" height="100%" width="100%" fill="#bc18234a" />
